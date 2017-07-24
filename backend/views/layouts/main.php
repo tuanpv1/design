@@ -1,5 +1,6 @@
 <?php
 use backend\assets\AppAsset;
+use common\models\News;
 use common\models\User;
 use common\widgets\Alert;
 use common\widgets\Nav;
@@ -128,35 +129,30 @@ AppAsset::register($this);
 //                    'label' => Yii::t('app','Danh mục'),
 //                    'url' => ['category/index'],
 //                ],
-//                [
-//                    'encode' => false,
-//                    'label' => Yii::t('app','Tiến độ'),
-//                    'url' => ['news/index', 'type' => \common\models\News::TYPE_TIENDO],
-//                ],
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Tin tức thám tử'),
-                    'url' => ['news/index', 'type' => \common\models\News::TYPE_NEWS],
+                    'label' => News::getTypeName(News::TYPE_TIENDO),
+                    'url' => ['news/index', 'type' => News::TYPE_TIENDO],
                 ],
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Tuyển dụng'),
-                    'url' => ['news/index', 'type' => \common\models\News::TYPE_PROJECT],
+                    'label' => News::getTypeName(News::TYPE_NEWS),
+                    'url' => ['news/index', 'type' => News::TYPE_NEWS],
                 ],
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Dịch vụ cung cấp'),
-                    'url' => ['news/index', 'type' => \common\models\News::TYPE_COMMON],
+                    'label' => News::getTypeName(News::TYPE_PROJECT),
+                    'url' => ['news/index', 'type' => News::TYPE_PROJECT],
                 ],
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Giới thiệu'),
-                    'url' => ['news/view', 'id' => 75],
+                    'label' => News::getTypeName(News::TYPE_COMMON),
+                    'url' => ['news/index', 'type' => News::TYPE_COMMON],
                 ],
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Đội ngũ nhân viên'),
-                    'url' => ['news/view', 'id' => 86],
+                    'label' => News::getTypeName(News::TYPE_GIOITHIEU),
+                    'url' => ['news/view', 'id' => News::ID_ABOUT],
                 ],
             ]
         ],
@@ -199,30 +195,30 @@ AppAsset::register($this);
             'label' => Yii::t('app','Cấu hình'),
             'url' => ['info-public/index'],
         ],
-        [
-            'encode' => false,
-            'label' => Yii::t('app','Danh sách IP'),
-            'url' => ['ip-address-table/index'],
-        ],
-        [
-            'label' => Yii::t('app','QL Phân quyền'),
-            'url' => 'javascript:;',
-            'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
-            'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
-            'items' => [
-                [
-                    'encode' => false,
-                    'label' => Yii::t('app','QL Quyền'),
-                    'url' => ['rbac-backend/permission'],
-                    'require_auth' => true,
-                ],
-                [
-                    'encode' => false,
-                    'label' => Yii::t('app','QL Nhóm quyền'),
-                    'url' => ['rbac-backend/role'],
-                ],
-            ]
-        ],
+//        [
+//            'encode' => false,
+//            'label' => Yii::t('app','Danh sách IP'),
+//            'url' => ['ip-address-table/index'],
+//        ],
+//        [
+//            'label' => Yii::t('app','QL Phân quyền'),
+//            'url' => 'javascript:;',
+//            'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
+//            'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
+//            'items' => [
+//                [
+//                    'encode' => false,
+//                    'label' => Yii::t('app','QL Quyền'),
+//                    'url' => ['rbac-backend/permission'],
+//                    'require_auth' => true,
+//                ],
+//                [
+//                    'encode' => false,
+//                    'label' => Yii::t('app','QL Nhóm quyền'),
+//                    'url' => ['rbac-backend/role'],
+//                ],
+//            ]
+//        ],
 //        [
 //            'encode' => false,
 //            'label' => Yii::t('app','QL nhà phân phối'),

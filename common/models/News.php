@@ -67,6 +67,8 @@ class News extends \yii\db\ActiveRecord
     const POSITION_TOP = 1;
     const POSITION_NOTTOP = 2;
 
+    const ID_ABOUT = 1;
+
     public $village_array;
     public $category_id;
     public $select;
@@ -238,11 +240,11 @@ class News extends \yii\db\ActiveRecord
     public static function listStatusType()
     {
         $lst = [
-            self::TYPE_COMMON => 'Dịch vụ cung cấp',
-            self::TYPE_NEWS => 'Tin tức thám tử',
+            self::TYPE_COMMON => 'Dịch vụ',
+            self::TYPE_NEWS => 'Tin mới',
             self::TYPE_GIOITHIEU => 'Giới thiệu',
-            self::TYPE_PROJECT => 'Tuyển dụng',
-            self::TYPE_TIENDO => 'Đội ngũ nhân viên',
+            self::TYPE_PROJECT => 'Dự án',
+            self::TYPE_TIENDO => 'Thị trường',
         ];
         return $lst;
     }
