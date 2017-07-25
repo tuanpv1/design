@@ -19,9 +19,9 @@ use yii\helpers\Url;
                 if($type == News::TYPE_NEWS){
                     if(isset($cat) && $cat != null){
                         echo "Tin tức ". strtolower($cat->title);
-                    }else{echo " Tin tức thám tử";}}
-                if($type == News::TYPE_PROJECT){echo "Thông tin tuyển dụng";}
-                if($type == News::TYPE_COMMON){echo "Dịch vụ cung cấp";}
+                    }else{echo " Tin tức mới về các sàn chung cư";}}
+                if($type == News::TYPE_PROJECT){echo "Thông tin các dự án";}
+                if($type == News::TYPE_COMMON){echo "Dịch vụ được hỗ trợ tại sàn chung cư 24h";}
 
                 ?>
             </h2>
