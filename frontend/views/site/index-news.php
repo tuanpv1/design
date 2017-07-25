@@ -13,7 +13,7 @@ use yii\helpers\Url;
     <?= \frontend\widgets\Header::getMenuHeader() ?>
     <div class="news-main main-section">
         <div class="main-title tac ttu">
-            <span class="segoeui">Thám Tử VIP</span>
+            <span class="segoeui">Sàn chung cư 24h</span>
             <h2 class="utm-trajan">
                 <?php
                 if($type == News::TYPE_NEWS){
