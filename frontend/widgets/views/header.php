@@ -20,7 +20,7 @@ use yii\helpers\Url;
             if ($i == 2){
             ?>
         </ul>
-        <a href="">
+        <a href="<?= Url::to('http://sanchungcu24h.com')?>">
             <?php
             if (isset($header)) {
                 /** @var $header InfoPublic */
