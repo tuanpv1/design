@@ -25,18 +25,18 @@ class Header extends Widget
 
     public function run()
     {
-//        $cate = Category::find()
-//            ->andWhere(['status'=>Category::STATUS_ACTIVE])
-//            ->limit(6)
-//            ->all();
-//
-//        $header = InfoPublic::findOne(['id'=>1]);
-//
-//        return $this->render('//header/header', [
-//            'listUnitLink' => self::$listUnitLink,
-//            'header'=>$header,
-//            'cate'=>$cate,
-//        ]);
+        $cate = Category::find()
+            ->andWhere(['status'=>Category::STATUS_ACTIVE])
+            ->limit(6)
+            ->all();
+
+        $header = InfoPublic::findOne(['id'=>1]);
+
+        return $this->render('//header/header', [
+            'listUnitLink' => self::$listUnitLink,
+            'header'=>$header,
+            'cate'=>$cate,
+        ]);
     }
 
     public static function getMenuHeader(){
