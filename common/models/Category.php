@@ -59,7 +59,7 @@ class Category extends \yii\db\ActiveRecord
             [['description','ascii_name'], 'string'],
             [['display_name', 'path'], 'string', 'max' => 200],
             [['images'], 'string', 'max' => 500],
-            [['image'],
+            [['images'],
                 'file',
                 'tooBig'         => Yii::t('app','{attribute} vượt quá dung lượng cho phép. Vui lòng thử lại'),
                 'wrongExtension' => Yii::t('app','{attribute} không đúng định dạng'),
