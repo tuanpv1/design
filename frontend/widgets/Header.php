@@ -32,7 +32,7 @@ class Header extends Widget
 
         $header = InfoPublic::findOne(['id'=>1]);
 
-        return $this->render('//header/header', [
+        return $this->render('header', [
             'listUnitLink' => self::$listUnitLink,
             'header'=>$header,
             'cate'=>$cate,
@@ -50,7 +50,7 @@ class Header extends Widget
 
         $st = new Header();
 
-        return $st->render('//header/menu-header', [
+        return $st->render('menu-header', [
             'doiNNV'=>$doiNNV,
             'gioithieu'=>$gioithieu,
         ]);
