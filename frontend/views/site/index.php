@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Vinpearl Condotel';
+$this->title = 'Sàn chung cư 24h';
 ?>
 <div class="main ovfh">
     <div class="main-banner posr ovfh">

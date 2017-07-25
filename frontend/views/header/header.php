@@ -3,6 +3,7 @@ use common\models\AffiliateCompany;
 use common\models\InfoPublic;
 use yii\helpers\Url;
 ?>
+<div id="vingroup_logos_container" style="opacity: 0;"></div>
 <div class="header posf">
     <div class="tac posr">
         <div class="menu-rps-992"><a href="#"><i class="fa fa-bars"></i></a></div>

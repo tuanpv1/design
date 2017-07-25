@@ -19,7 +19,7 @@ use common\models\News;
         ?>
         <div class="news-main main-section">
             <div class="main-title tac ttu">
-                <span class="segoeui">Thám Tử VIP </span>
+                <span class="segoeui">Sàn chung cư 24h </span>
                 <h2 class="utm-trajan">
                     <?php
                     if($model->type == News::TYPE_NEWS){echo "Tin tức mới về các sàn chung cư";}
