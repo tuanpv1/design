@@ -1,13 +1,18 @@
+<?php
+use common\models\AffiliateCompany;
+use common\models\InfoPublic;
+use yii\helpers\Url;
+?>
 <div id="vingroup_logos_container" style="opacity: 0;">
     <div id="vingroup_logos">
         <div id="vingroup_logo">
-            <a class="item" href="" target="_blank">
+            <a class="item" href="<?= Url::to('sanchungcu24h.com') ?>">
                 <?php
                 if (isset($header)) {
-                    /** @var $header \common\models\InfoPublic */
+                    /** @var $header InfoPublic */
                     ?>
                     <img
-                            src="<?= $header->image_header ? \common\models\InfoPublic::getImage($header->image_header) : '' ?>"
+                            src="<?= $header->image_header ? InfoPublic::getImage($header->image_header) : '' ?>"
                             alt="">
                 <?php } else { ?>
                     <img src="images/icons/vingroup.png" alt="">
@@ -18,7 +23,7 @@
             <div id="PnL_logos_1" class="slide">
                 <?php if (isset($listUnitLink) && !empty($listUnitLink)) {
                     foreach ($listUnitLink as $item) {
-                        /** @var $item \common\models\AffiliateCompany */
+                        /** @var $item AffiliateCompany */
                         ?>
                         <a class="item" href="<?= $item->url ?>" target="_blank" data-id="vinhomes">
                             <img src="<?= $item->getImage() ?>" alt="">
@@ -183,7 +188,7 @@
         <a href="">
             <?php
             if (isset($header)) {
-                /** @var $header \common\models\InfoPublic */
+                /** @var $header InfoPublic */
                 ?>
                 <img src="<?= $header->image_menu ? \common\models\InfoPublic::getImage($header->image_menu) : '' ?>"
                      alt="">
