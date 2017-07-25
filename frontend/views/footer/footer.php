@@ -68,7 +68,7 @@
         </div>
     </div>
     <div class="footer-last tac ttu segoeui ovfh">
-        COPYRIGHT 2016 CTY THÁM TỬ VIP.
+        COPYRIGHT 2016 Sàn Chung Cư 24h.
         <p style="margin:10px 0 0;font-size:11px;"><?= Yii::t('app','Hình ảnh chỉ mang tính minh hoạ cho sản phẩm và dịch vụ. Chúng tôi có quyền thay đổi thông tin mà không cần báo trước.') ?></p>
     </div>
 </div>
