@@ -178,28 +178,33 @@ AppAsset::register($this);
             'url' => ['banner/index'],
         ],
         [
-            'label' => Yii::t('app','QL Tài khoản'),
-            'url' => 'javascript:;',
-            'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
-            'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
-            'items' => [
-                [
-                    'encode' => false,
-                    'label' => Yii::t('app','QL Tài khoản Admin'),
-                    'url' => ['user/index', "type" => User::TYPE_ADMIN],
-                ],
-                [
-                    'encode' => false,
-                    'label' => Yii::t('app','QL Đăng kí nhận tin'),
-                    'url' => ['email/index'],
-                ],
-            ]
-        ],
-        [
             'encode' => false,
-            'label' => Yii::t('app','QL Banner chạy các dịch vụ'),
-            'url' => ['affiliate-company/index','type' => \common\models\AffiliateCompany::TYPE_UNITLINK ],
+            'label' => Yii::t('app','QL Đăng kí nhận tin'),
+            'url' => ['email/index'],
         ],
+//        [
+//            'label' => Yii::t('app','QL Tài khoản'),
+//            'url' => 'javascript:;',
+//            'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
+//            'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
+//            'items' => [
+//                [
+//                    'encode' => false,
+//                    'label' => Yii::t('app','QL Tài khoản Admin'),
+//                    'url' => ['user/index', "type" => User::TYPE_ADMIN],
+//                ],
+//                [
+//                    'encode' => false,
+//                    'label' => Yii::t('app','QL Đăng kí nhận tin'),
+//                    'url' => ['email/index'],
+//                ],
+//            ]
+//        ],
+//        [
+//            'encode' => false,
+//            'label' => Yii::t('app','QL Banner chạy các dịch vụ'),
+//            'url' => ['affiliate-company/index','type' => \common\models\AffiliateCompany::TYPE_UNITLINK ],
+//        ],
 //        [
 //            'encode' => false,
 //            'label' => Yii::t('app','Quản lý đối tác'),
