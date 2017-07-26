@@ -103,6 +103,10 @@ $kcfOptions = array_merge(\common\widgets\CKEditor::$kcfDefaultOptions, [
 
     <?= $form->field($model, 'short_description')->textarea(['rows' => 4]) ?>
 
+    <?php if($type == News::TYPE_PROJECT){?>
+        <?= $form->field($model, 'position')->dropDownList(News::listPosition())?>
+    <?php }?>
+
 
     <?= $form->field($model, 'content')->widget(\common\widgets\CKEditor::className(), [
         'options' => [
