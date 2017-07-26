@@ -2,7 +2,7 @@
  /** @var $footer \common\models\InfoPublic*/
 ?>
 <div class="grid12">
-    <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/bannerfooter.png" alt="Liên hệ để được tư vấn">
+    <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/bannerfooter.jpg" alt="Liên hệ để được tư vấn">
 </div>
 <div id="main_contact" class="footer">
     <div class="container ovfh">
