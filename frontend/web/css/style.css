@@ -476,7 +476,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #279db6 !important;
+  background-color: #00AE67 !important;
   -webkit-transition: all .3s ;
   -o-transition: all .3s ;
   transition: all .3s ;
@@ -503,7 +503,7 @@ body {
   left: 0px;
   width: 100%;
   height: auto;
-  background-color: rgba(39, 157, 182, 0.85);
+  background-color: #00AE67;
   z-index: 10000;
 }
 .header > div {
@@ -699,7 +699,7 @@ body {
 .main-nav {
   width: 100%;
   display: block;
-  background-color: #1b8fa5;
+  background-color: #00AE67;
   background-image: url(../images/icons/nav-bg.png);
   background-repeat: no-repeat;
   background-position: right , 100px;
@@ -924,13 +924,13 @@ body {
   left: 50px;
   color: #fff;
   overflow-y: auto;
-  background: -webkit-linear-gradient(left, #34b3cb, #087287);
+  background: -webkit-linear-gradient(left, #90E85E, #00AE67);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #34b3cb, #087287);
+  background: -o-linear-gradient(right, #90E85E, #00AE67);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #34b3cb, #087287);
+  background: -moz-linear-gradient(right, #90E85E, #00AE67);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(right, #34b3cb, #087287);
+  background: linear-gradient(right, #90E85E, #00AE67);
   /* Standard syntax */
 }
 .main-project-first > div img {
