@@ -126,11 +126,6 @@ AppAsset::register($this);
             'items' => [
                 [
                     'encode' => false,
-                    'label' => Yii::t('app','Danh mục'),
-                    'url' => ['category/index'],
-                ],
-                [
-                    'encode' => false,
                     'label' => News::getTypeName(News::TYPE_TIENDO),
                     'url' => ['news/index', 'type' => News::TYPE_TIENDO],
                 ],
@@ -149,6 +144,19 @@ AppAsset::register($this);
                     'label' => News::getTypeName(News::TYPE_COMMON),
                     'url' => ['news/index', 'type' => News::TYPE_COMMON],
                 ],
+            ]
+        ],
+        [
+            'encode' => false,
+            'label' => Yii::t('app','Danh mục menu top'),
+            'url' => ['category/index'],
+        ],
+        [
+            'label' => Yii::t('app','QL bài viết menu'),
+            'url' => 'javascript:;',
+            'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
+            'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
+            'items' => [
                 [
                     'encode' => false,
                     'label' => News::getTypeName(News::TYPE_GIOITHIEU),
