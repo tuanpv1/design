@@ -159,6 +159,16 @@ AppAsset::register($this);
                     'label' => 'Tuyển dụng',
                     'url' => ['news/view', 'id' => News::ID_TUYENDUNG],
                 ],
+                [
+                    'encode' => false,
+                    'label' => 'Tiến độ thanh toán',
+                    'url' => ['news/view', 'id' => News::ID_THANHTOAN],
+                ],
+                [
+                    'encode' => false,
+                    'label' => 'Chính sách ưu đãi',
+                    'url' => ['news/view', 'id' => News::ID_CHINHSACH],
+                ],
             ]
         ],
 
