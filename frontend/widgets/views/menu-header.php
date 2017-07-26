@@ -54,7 +54,7 @@ use yii\helpers\Url;
         <a href="<?= Url::to(['site/news','type'=> \common\models\News::TYPE_NEWS]) ?>"><?= Yii::t('app','Tin tức') ?></a>
     </li>
     <li>
-        <a href="<?= Url::to(['site/news','type'=>\common\models\News::TYPE_PROJECT]) ?>">
+        <a href="<?= Url::to(['site/detail-news','id'=>\common\models\News::ID_TUYENDUNG]) ?>">
             <svg width="80" height="80" style="display: block;">
                 <circle class="circle" cy="40" cx="39" r="38" stroke="#fff" stroke-width="1"
                         fill="transparent"></circle>
