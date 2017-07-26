@@ -15,7 +15,7 @@ use yii\helpers\Url;
     <div class="main-section container">
         <div class="main-title tac ttu">
             <span class="segoeui">Sàn chung cư 24h</span>
-            <h2 class="utm-trajan">Các dịnh vụ hiện đang cung cấp</h2>
+            <h2 class="utm-trajan">Lợi ích đầu tư với sàn chung cư 24h</h2>
         </div>
         <ul class="benef-main-list">
             <?php
