@@ -68,6 +68,7 @@ class News extends \yii\db\ActiveRecord
     const POSITION_NOTTOP = 2;
 
     const ID_ABOUT = 1;
+    const ID_TUYENDUNG = 2;
 
     public $village_array;
     public $category_id;

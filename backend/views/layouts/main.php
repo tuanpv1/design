@@ -154,6 +154,11 @@ AppAsset::register($this);
                     'label' => News::getTypeName(News::TYPE_GIOITHIEU),
                     'url' => ['news/view', 'id' => News::ID_ABOUT],
                 ],
+                [
+                    'encode' => false,
+                    'label' => 'Tuyển dụng',
+                    'url' => ['news/view', 'id' => News::ID_TUYENDUNG],
+                ],
             ]
         ],
 
