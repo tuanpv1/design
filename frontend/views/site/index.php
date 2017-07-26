@@ -57,17 +57,6 @@ $this->title = 'Sàn chung cư 24h';
             <a href="<?= Url::to(['site/distribution']) ?>"><?= Yii::t('app','Hệ thống phân phối') ?></a>
         </li>
         <li>
-            <a href="<?= Url::to(['site/investment']) ?>">
-                <svg width="80" height="80" style="display: block;">
-                    <circle class="circle" cy="40" cx="39" r="38" stroke="#fff" stroke-width="1"
-                            fill="transparent"></circle>
-                </svg>
-                <img class="posa" src="images/icons/t3.png" alt="#">
-                <img class="posa" src="images/icons/nav-hover-3.png" alt="#">
-            </a>
-            <a href="<?= Url::to(['site/investment']) ?>"><?= Yii::t('app','Lợi ích đầu tư') ?></a>
-        </li>
-        <li>
             <a href="<?= Url::to(['site/news','type'=> \common\models\News::TYPE_NEWS]) ?>">
                 <svg width="80" height="80" style="display: block;">
                     <circle class="circle" cy="40" cx="39" r="38" stroke="#fff" stroke-width="1"
