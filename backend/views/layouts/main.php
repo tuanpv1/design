@@ -144,6 +144,16 @@ AppAsset::register($this);
                     'label' => News::getTypeName(News::TYPE_COMMON),
                     'url' => ['news/index', 'type' => News::TYPE_COMMON],
                 ],
+                [
+                    'encode' => false,
+                    'label' => 'Tiến độ thanh toán',
+                    'url' => ['news/view', 'id' => News::ID_THANHTOAN],
+                ],
+                [
+                    'encode' => false,
+                    'label' => 'Chính sách ưu đãi',
+                    'url' => ['news/index', 'type' => News::TYPE_CS],
+                ],
             ]
         ],
         [
@@ -166,16 +176,6 @@ AppAsset::register($this);
                     'encode' => false,
                     'label' => 'Tuyển dụng',
                     'url' => ['news/view', 'id' => News::ID_TUYENDUNG],
-                ],
-                [
-                    'encode' => false,
-                    'label' => 'Tiến độ thanh toán',
-                    'url' => ['news/view', 'id' => News::ID_THANHTOAN],
-                ],
-                [
-                    'encode' => false,
-                    'label' => 'Chính sách ưu đãi',
-                    'url' => ['news/view', 'id' => News::ID_CHINHSACH],
                 ],
             ]
         ],

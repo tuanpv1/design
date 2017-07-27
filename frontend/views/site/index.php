@@ -76,7 +76,7 @@ $this->title = 'Sàn chung cư 24h';
                 <img class="posa" src="images/icons/t5.png" alt="#">
                 <img class="posa" src="images/icons/nav-hover-5.png" alt="#">
             </a>
-            <a href="#">Tài liệu dự án</a>
+            <a href="http://sanchungcu24h.com/#main_da">Tài liệu dự án</a>
         </li>
     </ul>
     <div id="main_about" class="main-invest ovfh">
@@ -124,8 +124,8 @@ $this->title = 'Sàn chung cư 24h';
     <div id="main_da"></div>
     <div  class="main-project main-section">
         <div class="main-title tac ttu">
-            <span class="segoeui">Vinpearl Condotel</span>
-            <h2 class="utm-trajan">Các dự án Condotel</h2>
+            <span class="segoeui">Sanchungcu24h</span>
+            <h2 class="utm-trajan">Dự Án</h2>
         </div>
         <?php if (isset($duantop) && !empty($duantop)) {
             /** @var $duantop \common\models\News */
