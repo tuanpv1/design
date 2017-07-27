@@ -61,6 +61,15 @@ $visible_village = false;
                         ],
                         [
                             'class' => '\kartik\grid\DataColumn',
+                            'attribute' => 'position',
+                            'format' => 'html',
+                            'value' => function ($model, $key, $index, $widget) {
+                                /** @var $model \common\models\News */
+                                return $model->position==News::POSITION_TOP?'Top':'Bình thường';
+                            },
+                        ],
+                        [
+                            'class' => '\kartik\grid\DataColumn',
                             'attribute' => 'status',
                             'format' => 'html',
                             'value' => function ($model, $key, $index, $widget) {
