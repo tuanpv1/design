@@ -23,7 +23,7 @@ use common\models\News;
                 <h2 class="utm-trajan">
                     <?php
                     if($model->type == News::TYPE_NEWS){echo "Tin tức mới về các sàn chung cư";}
-                    if($model->type == News::TYPE_PROJECT){echo "Thông tin về các dự án";}
+                    if($model->type == News::TYPE_PROJECT){echo "Thông tin về dự án";}
                     if($model->type == News::TYPE_COMMON){echo "Dịch vụ được hỗ trợ tại sàn chung cư 24h";}
                     if($model->id == News::ID_THANHTOAN){echo $model->title;}
                     if($model->id == News::ID_TUYENDUNG){echo $model->title;}
