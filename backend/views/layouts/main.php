@@ -124,11 +124,11 @@ AppAsset::register($this);
             'options' => ['class' => 'menu-dropdown mega-menu-dropdown'],
             'linkOptions' => ['data-hover' => 'megamenu-dropdown', 'data-close-others' => 'true'],
             'items' => [
-//                [
-//                    'encode' => false,
-//                    'label' => News::getTypeName(News::TYPE_TIENDO),
-//                    'url' => ['news/index', 'type' => News::TYPE_TIENDO],
-//                ],
+                [
+                    'encode' => false,
+                    'label' => News::getTypeName(News::TYPE_TIENDO),
+                    'url' => ['news/index', 'type' => News::TYPE_TIENDO],
+                ],
                 [
                     'encode' => false,
                     'label' => News::getTypeName(News::TYPE_NEWS),
@@ -143,11 +143,6 @@ AppAsset::register($this);
                     'encode' => false,
                     'label' => News::getTypeName(News::TYPE_COMMON),
                     'url' => ['news/index', 'type' => News::TYPE_COMMON],
-                ],
-                [
-                    'encode' => false,
-                    'label' => 'Tiến độ thanh toán',
-                    'url' => ['news/view', 'id' => News::ID_THANHTOAN],
                 ],
                 [
                     'encode' => false,

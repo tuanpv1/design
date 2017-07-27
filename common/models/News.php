@@ -249,7 +249,7 @@ class News extends \yii\db\ActiveRecord
             self::TYPE_NEWS => 'Tin mới',
             self::TYPE_GIOITHIEU => 'Giới thiệu',
             self::TYPE_PROJECT => 'Dự án',
-            self::TYPE_TIENDO => 'Thị trường',
+            self::TYPE_TIENDO => 'Tiến độ thanh toán',
             self::TYPE_CS => 'Chính sách ưu đãi',
             self::TYPE_TI => 'Tiến độ dự án',
             self::TYPE_NV => 'Đội ngũ nhân viên',
