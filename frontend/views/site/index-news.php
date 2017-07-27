@@ -24,6 +24,7 @@ use yii\helpers\Url;
                 if($type == News::TYPE_COMMON){echo "Dịch vụ được hỗ trợ tại sàn chung cư 24h";}
                 if($type == News::TYPE_TI){echo "Tiện ích";}
                 if($type == News::TYPE_CS){echo "Chính sách ưu đãi";}
+                if($type == News::TYPE_NV){echo "Đội ngũ nhân viên";}
                 ?>
             </h2>
         </div>
