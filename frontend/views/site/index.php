@@ -187,8 +187,8 @@ $this->title = 'Sàn chung cư 24h';
     </div>
     <div class="main-benef main-section">
         <div id="main_lidt"  class="main-title tac ttu">
-            <span class="segoeui">Vinpearl Condotel</span>
-            <h2 class="utm-trajan">Các lợi ích đầu tư</h2>
+            <span class="segoeui">sanchungcu24h</span>
+            <h2 class="utm-trajan">Lợi ích đầu tư</h2>
         </div>
         <div class="container">
             <div id="owl-example" class="owl-carousel">
