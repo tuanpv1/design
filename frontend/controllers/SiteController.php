@@ -313,6 +313,8 @@ class SiteController extends Controller
             $listNews->andWhere(['type'=>News::TYPE_TI]);
         }elseif ($type == News::TYPE_NV){
             $listNews->andWhere(['type'=>News::TYPE_NV]);
+        }elseif ($type == News::TYPE_TIENDO){
+            $listNews->andWhere(['type'=>News::TYPE_TIENDO]);
         }
         if(isset($id)){
             $listNews->andWhere(['id_cat'=>$id]);
