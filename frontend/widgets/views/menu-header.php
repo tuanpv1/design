@@ -21,7 +21,7 @@ use yii\helpers\Url;
         <a href="<?= $gioithieu?Url::to(['site/detail-news','id'=>$gioithieu->id]):'' ?>"><?= Yii::t('app','Giới thiệu') ?></a>
     </li>
     <li>
-        <a href="<?= $doiNNV?Url::to(['site/detail-news','id'=>$doiNNV->id]):'' ?>">
+        <a href="<?= Url::to(['site/news','type'=>\common\models\News::TYPE_NV]) ?>">
             <svg width="80" height="80" style="display: block;">
                 <circle class="circle" cy="40" cx="39" r="38" stroke="#fff" stroke-width="1"
                         fill="transparent"></circle>
@@ -51,6 +51,6 @@ use yii\helpers\Url;
             <img class="posa" src="images/icons/t5.png" alt="#">
             <img class="posa" src="images/icons/nav-hover-5.png" alt="#">
         </a>
-        <a href="#">Thông tin Tuyển dụng</a>
+        <a href="<?= Url::to(['site/detail-news','id'=>\common\models\News::ID_TUYENDUNG]) ?>">Thông tin Tuyển dụng</a>
     </li>
 </ul>

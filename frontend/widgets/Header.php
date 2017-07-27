@@ -42,14 +42,14 @@ class Header extends Widget
     public static function getMenuHeader(){
         $gioithieu = News::findOne(['id'=>News::ID_ABOUT]);
 
-        $doiNNV = News::find()->andWhere(['status' => News::STATUS_ACTIVE])
-            ->andWhere(['type' => News::TYPE_TIENDO])
-            ->orderBy(['updated_at' => SORT_DESC])->one();
+//        $doiNNV = News::find()->andWhere(['status' => News::STATUS_ACTIVE])
+//            ->andWhere(['type' => News::TYPE_TIENDO])
+//            ->orderBy(['updated_at' => SORT_DESC])->one();
 
         $st = new Header();
 
         return $st->render('menu-header', [
-            'doiNNV'=>$doiNNV,
+//            'doiNNV'=>$doiNNV,
             'gioithieu'=>$gioithieu,
         ]);
     }
