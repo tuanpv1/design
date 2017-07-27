@@ -31,7 +31,7 @@ use common\models\News;
             </div>
             <div class="container main-news-details">
                 <div class="grid8">
-                    <h3><?= $model->id == News::ID_THANHTOAN?$model->title:'' ?></h3>
+                    <h3><?= $model->id == News::ID_THANHTOAN?'':$model->title ?></h3>
                     <div class="time-share fluid">
                         <time class="fl"><img style="width: 18px"
                                 src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/icons/news-icon-time.gif"
