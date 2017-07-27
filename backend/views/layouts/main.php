@@ -154,6 +154,11 @@ AppAsset::register($this);
                     'label' => 'Chính sách ưu đãi',
                     'url' => ['news/index', 'type' => News::TYPE_CS],
                 ],
+                [
+                    'encode' => false,
+                    'label' => 'Đội ngũ nhân viên',
+                    'url' => ['news/index', 'type' => News::TYPE_NV],
+                ],
             ]
         ],
         [

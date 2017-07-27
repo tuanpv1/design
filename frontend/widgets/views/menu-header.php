@@ -29,7 +29,7 @@ use yii\helpers\Url;
             <img class="posa" src="images/icons/t2.png" alt="#">
             <img class="posa" src="images/icons/nav-hover-2.png" alt="#">
         </a>
-        <a href="<?= $doiNNV?Url::to(['site/detail-news','id'=>$doiNNV->id]):'' ?>"><?= Yii::t('app','Đội ngũ nhân viên') ?></a>
+        <a href="<?= Url::to(['site/news','type'=>\common\models\News::TYPE_NV]) ?>"><?= Yii::t('app','Đội ngũ nhân viên') ?></a>
     </li>
     <li>
         <a href="<?= Url::to(['site/news','type'=> \common\models\News::TYPE_NEWS]) ?>">

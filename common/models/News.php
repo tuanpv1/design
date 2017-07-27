@@ -61,7 +61,7 @@ class News extends \yii\db\ActiveRecord
     const TYPE_PROJECT = 4;
     const TYPE_COMMON = 5;
     const TYPE_GIOITHIEU = 6;
-    const TYPE_EXPERIENCE = 7;
+    const TYPE_NV = 7;
     const TYPE_CS = 8;
     const TYPE_TI = 9;
 
@@ -252,6 +252,7 @@ class News extends \yii\db\ActiveRecord
             self::TYPE_TIENDO => 'Thị trường',
             self::TYPE_CS => 'Chính sách ưu đãi',
             self::TYPE_TI => 'Tiến độ dự án',
+            self::TYPE_NV => 'Đội ngũ nhân viên',
         ];
         return $lst;
     }
