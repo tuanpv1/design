@@ -22,9 +22,8 @@ use yii\helpers\Url;
                     }else{echo " Tin tức mới về các sàn chung cư";}}
                 if($type == News::TYPE_PROJECT){echo "Thông tin các dự án";}
                 if($type == News::TYPE_COMMON){echo "Dịch vụ được hỗ trợ tại sàn chung cư 24h";}
-                if($type == News::TYPE_TI){echo "Tiến độ dự án";}
+                if($type == News::TYPE_TI){echo "Tiện ích";}
                 if($type == News::TYPE_CS){echo "Chính sách ưu đãi";}
-
                 ?>
             </h2>
         </div>
