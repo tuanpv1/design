@@ -43,7 +43,7 @@ $this->title = 'Sàn chung cư 24h';
                 <img class="posa" src="images/icons/t1.png" alt="#">
                 <img class="posa" src="images/icons/nav-hover-1.png" alt="#">
             </a>
-            <a href="#"><?= Yii::t('app','Tiện ích') ?></a>
+            <a href="<?= Url::to(['site/news','type'=>\common\models\News::TYPE_TI]); ?>"><?= Yii::t('app','Tiện ích') ?></a>
         </li>
         <li>
             <a href="<?= Url::to(['site/distribution']) ?>">
