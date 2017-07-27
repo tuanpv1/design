@@ -133,7 +133,7 @@ $this->title = 'Sàn chung cư 24h';
 
             <div class="main-project-first container posr ovfh wow fadeIn" data-wow-duration="2s">
                 <div class="project-first-box-left posa">
-                    <h3 class="ttu utm-trajan"><a href="<?= $duantop->source_url ?>"><?= \common\helpers\CUtils::subString1($duantop->title,1) ?><br><?= \common\helpers\CUtils::subString1($duantop->title,strlen(\common\helpers\CUtils::subString1($duantop->title,1)) + 1) ?></a></h3>
+                    <h3 class="ttu utm-trajan"><a href="<?= Url::to(['site/detail-news','id'=>$duantop->id]) ?>"><?= $duantop->title ?></a></h3>
                     <p class="segoeui"><?= $duantop->short_description ?></p>
                     <img src="images/icons/project-box-bg.png" alt="#" class="posa">
                 </div>
@@ -167,7 +167,7 @@ $this->title = 'Sàn chung cư 24h';
                         <li class="grid4 wow fadeInUp" data-wow-delay=".5s">
                             <img src="<?= $item->getImage() ?>" alt="#">
                             <?php if(!empty($item->title)){ ?>
-                                <a href="<?= $item->source_url ?>"><?= \common\helpers\CUtils::subString1($item->title,1) ?><br><?= \common\helpers\CUtils::subString1($item->title,strlen(\common\helpers\CUtils::subString1($item->title,1)) + 1) ?></a>
+                                <a href="<?= Url::to(['site/detail-news','id'=>$item->id]) ?>"><?= $item->title ?></a>
                             <?php } ?>
                         </li>
                     <?php }
