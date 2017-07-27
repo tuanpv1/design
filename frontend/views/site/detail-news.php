@@ -26,12 +26,13 @@ use common\models\News;
                     if($model->type == News::TYPE_PROJECT){echo "Thông tin về các dự án";}
                     if($model->type == News::TYPE_COMMON){echo "Dịch vụ được hỗ trợ tại sàn chung cư 24h";}
                     if($model->id == News::ID_THANHTOAN){echo $model->title;}
+                    if($model->id == News::ID_TUYENDUNG){echo $model->title;}
                     ?>
                 </h2>
             </div>
             <div class="container main-news-details">
                 <div class="grid8">
-                    <h3><?= $model->id == News::ID_THANHTOAN?'':$model->title ?></h3>
+                    <h3><?= $model->id == News::ID_THANHTOAN||$model->id == News::ID_TUYENDUNG?'':$model->title ?></h3>
                     <div class="time-share fluid">
                         <time class="fl"><img style="width: 18px"
                                 src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/icons/news-icon-time.gif"
